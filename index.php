@@ -1,6 +1,20 @@
 <?php 
    require_once __DIR__ . "./includes/header.php";
+   require_once __DIR__ . './controllers/mailer-verification.php';
+    if (isset($_SESSION['SESSION_EMAIL'])) 
+    { 
+        $query = mysqli_query($conn, "SELECT privilage FROM users WHERE email='{$_SESSION['SESSION_EMAIL']}'");
+        $type = mysqli_fetch_assoc($query);
+        if($type['privilage']==='admin'){
+            header("Location: ./views/admin/dashboard.php"); die();
+        }
+        else{
+            header("Location: ./views/user/profile.php"); die();
+            
+        }
+    }
 ?>
+<?php echo $msg  ?>
    <title>Sign In</title>
 
    <div class="container-fluid d-flex min-vh-100 align-items-center justify-content-center">

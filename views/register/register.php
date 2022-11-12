@@ -11,7 +11,7 @@
 ?>
 
 <title>Register</title>
-
+<?php echo $msg ?>
 <!-- Form Layout -->
 <div class="container vh-100 mt-3">
 	<div class="row d-flex justify-content-center align-items-center h-100">

@@ -55,7 +55,7 @@ if (isset($_POST['submit']))
                 require_once __DIR__ . './mailer.php';
 
                 $msg = "<div>We've send a verification link on your email address.</div>";
-                // header("Location: ./validate.php");
+                header("Location: ./validate.php");
 
             }
             else
