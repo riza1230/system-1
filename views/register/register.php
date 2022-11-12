@@ -5,8 +5,8 @@
 	// Check Internet Connection
 	if (!$sock = @fsockopen('www.google.com',80,$errorNum,$errorMessage))
 	{
-		$msg = "<div class='alert alert-secondary p-1 text-center'>No internet connection. Email verification might not work.</div>";
-		echo $msg;
+		$netError = "<div class='alert alert-secondary p-1 text-center'>No internet connection. Email verification might not work.</div>";
+		echo $netError;
 	}
 ?>
 

@@ -27,8 +27,8 @@ try
     $mail->addAddress($_POST["email"]);
     //Content
     $mail->isHTML(true); //Set email format to HTML
-    $mail->Subject = $_POST["subject"];
-    $mail->Body = $_POST["body"];
+    $mail->Subject = "Email verification";
+    $mail->Body = $body;
 
     $mail->send();
     echo 'Message has been sent';
