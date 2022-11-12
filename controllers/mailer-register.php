@@ -51,11 +51,11 @@ if (isset($_POST['submit']))
 
             if ($result)
             {
-                $body = '<a href="http://localhost/login-system/?verification=' . $code . '">Click this link to verify</a>';
+                $body = '<a href="http://localhost/system/?verification=' . $code . '">Click this link to verify</a>';
                 require_once __DIR__ . './mailer.php';
 
                 $msg = "<div>We've send a verification link on your email address.</div>";
-                header("Location: ./validate.php");
+                // header("Location: ./validate.php");
 
             }
             else

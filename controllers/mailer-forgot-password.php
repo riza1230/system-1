@@ -21,7 +21,7 @@ if (isset($_POST['submit']))
     }
     else
     {
-        $msg = "<div>$email - This email address do not found.</div>";
+        $msg = "<div class='alert alert-danger p-1 text-center '>$email - This email address does not exist.</div>";
     }
 }
 
