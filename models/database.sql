@@ -7,7 +7,7 @@ CREATE TABLE `users` (
   `middlename` varchar(45) NOT NULL,
   `lastname` varchar(45) NOT NULL,
   `suffix` varchar(10) NOT NULL,
-  `schoolID` varchar(45) NOT NULL,
+  `school_ID` varchar(45) NOT NULL,
   `birthday` date NOT NULL,
   `email` varchar(45) NOT NULL,
   `ethnicity` varchar(10) NOT NULL,
