@@ -20,7 +20,7 @@
       <option value="">IV</option>
       <option value="">V</option>
    </select>
-
+   
    <div><b><h2>Personal Information</h2></b></div>
 
    <input type="text" name="birthday"  class="form-control mb-4" placeholder="Birthday"  onfocusin="(this.type='date')"
